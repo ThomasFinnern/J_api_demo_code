@@ -1,4 +1,6 @@
 <changelogs>
+	<!-- security, fix, language, addition, change, remove, note -->
+	<!-- item><![CDATA[<p>No security issues.</p>]]></item -->
 	<changelog>
 		<element>com_secondhand</element>
 		<type>component</type>
@@ -11,26 +13,8 @@
 		<element>com_secondhand</element>
 		<type>component</type>
 		<version>0.1.0</version>
-		<security>
-			<item><![CDATA[<p>No security issues.</p>]]></item>
-		</security>
-		<fix>
-			<item>No fix</item>
-		</fix>
-		<language>
-			<item>English</item>
-		</language>
-		<addition>
-			<item>Change log and Update Server added.</item>
-		</addition>
-		<change>
-			<item>No change</item>
-		</change>
-		<remove>
-			<item>No remove</item>
-		</remove>
 		<note>
-			<item>Change log and Update Server added.</item>
+			<item>First bare minimum version</item>
 		</note>
 	</changelog>
 </changelogs>
