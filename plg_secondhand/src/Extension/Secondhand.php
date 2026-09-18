@@ -62,5 +62,15 @@ final class Secondhand extends CMSPlugin implements SubscriberInterface
             'books',
             $getDefaults
         );
+
+        //--- version in db manifest -----------------------------
+
+        $router->addRoutes(
+		[
+			// version, creationDate
+			new Route(['GET'], 'v1/secondhand/version', 'version.display', [], $getDefaults),
+			new Route(['PATCH'], 'v1/secondhand/version', 'version.edit', [], $defaults),
+		]);
+
     }
 }
