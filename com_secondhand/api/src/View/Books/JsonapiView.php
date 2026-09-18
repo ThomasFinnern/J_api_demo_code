@@ -17,8 +17,6 @@ use Joomla\CMS\MVC\View\JsonApiView as BaseApiView;
 use Joomla\CMS\Plugin\PluginHelper;
 use Joomla\Component\Fields\Administrator\Helper\FieldsHelper;
 use Joomla\Registry\Registry;
-use Secondhand\Component\Secondhand\Api\Helper\SecondhandHelper;
-use Secondhand\Component\Secondhand\Api\Serializer\SecondhandSerializer;
 
 // phpcs:disable PSR1.Files.SideEffects
 \defined('_JEXEC') or die;

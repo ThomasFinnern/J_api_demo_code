@@ -14,7 +14,6 @@ use Joomla\CMS\Access\Exception\NotAllowed;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Controller\ApiController;
 use Joomla\String\Inflector;
-//use Bluebox\Component\Secondhand\Api\Model\ConfigModel;
 use Bluebox\Component\Secondhand\Api\Model\VersionModel;
 use Bluebox\Component\Secondhand\Api\View\Version\JsonapiView;
 use Tobscure\JsonApi\Exception\InvalidParameterException;
@@ -45,54 +44,6 @@ class VersionController extends ApiController
      * @since  5.0.10
      */
     protected $default_view = 'version';
-
-    /**
-     * Generic method to prepare the view
-     *
-     * @param $cachable
-     * @param $urlparams
-     *
-     * @return VersionController The prepared view
-     *
-     * @since  5.0.10
-     */
-    public function display($cachable = false, $urlparams = []) : self
-    {
-        $viewType   = $this->app->getDocument()->getType();
-        $viewName   = $this->input->get('view', $this->default_view);
-        $viewLayout = $this->input->get('layout', 'default', 'string');
-
-        try {
-            /** @var JsonApiView $view */
-            $view = $this->getView(
-                $viewName,
-                $viewType,
-                '',
-                ['base_path' => $this->basePath, 'layout' => $viewLayout, 'contentType' => $this->contentType]
-            );
-        } catch (\Exception $e) {
-            throw new \RuntimeException($e->getMessage());
-        }
-
-        $modelName = $this->input->get('model', Inflector::singularize($this->contentType));
-
-        // Create the model, ignoring request data so we can safely set the state in the request from the controller
-        /** @var VersionModel $model */
-        $model = $this->getModel($modelName, '', ['ignore_request' => true, 'state' => $this->modelState]);
-
-        // test if model is valid
-        if (!$model) {
-            throw new \RuntimeException(Text::_('JLIB_APPLICATION_ERROR_MODEL_CREATE'));
-        }
-
-        // Push the model into the view (as default)
-        $view->setModel($model, true);
-
-        $view->setDocument($this->app->getDocument());
-        $view->displayItem();
-
-        return $this;
-    }
 
 	/**
 	 *

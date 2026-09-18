@@ -8,7 +8,7 @@
   <license>GNU General Public License version 3 or later</license>
   <authorEmail>steven_smith@dummy.com</authorEmail>
   <authorUrl>https://smith14639@whatever.com</authorUrl>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <description>COM_SECONDHAND_XML_DESCRIPTION</description>
   <namespace path="src">Bluebox\Component\Secondhand</namespace>
   <install>

@@ -68,7 +68,7 @@ final class Secondhand extends CMSPlugin implements SubscriberInterface
         $router->addRoutes(
 		[
 			// version, creationDate
-			new Route(['GET'], 'v1/secondhand/version', 'version.display', [], $getDefaults),
+			new Route(['GET'], 'v1/secondhand/version', 'version.displayItem', [], $getDefaults),
 			new Route(['PATCH'], 'v1/secondhand/version', 'version.edit', [], $defaults),
 		]);
 

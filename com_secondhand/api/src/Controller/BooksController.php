@@ -10,10 +10,7 @@
 
 namespace Bluebox\Component\Secondhand\Api\Controller;
 
-use Joomla\CMS\Filter\InputFilter;
-use Joomla\CMS\Helper\TagsHelper;
 use Joomla\CMS\MVC\Controller\ApiController;
-use Joomla\Component\Fields\Administrator\Helper\FieldsHelper;
 
 // phpcs:disable PSR1.Files.SideEffects
 \defined('_JEXEC') or die;
@@ -41,7 +38,4 @@ class BooksController extends ApiController
      * @since  3.0
      */
     protected $default_view = 'books';
-
-
-    // Implement other methods like read, update, delete as needed
 }

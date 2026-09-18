@@ -34,6 +34,17 @@ class JsonapiView extends BaseApiView
         'creationDate',
     ];
 
+//    /**
+//     * The fields to render items in the documents
+//     *
+//     * @var  array
+//     * @since  4.0.0
+//     */
+//    protected $fieldsToRenderList = [
+//        'version',
+//        'creationDate',
+//    ];
+
     /**
      * Prepare item before render.
      *
