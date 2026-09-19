@@ -7,6 +7,7 @@
 		<version>0.2.0</version>
 		<note>
 			<item>Removed unnecesary parts in controller, kept edit only, api module getItem, save</item>
+			<item>Branch: get_patch_version</item>
 		</note>
 	</changelog>
 	<changelog>
@@ -15,6 +16,7 @@
 		<version>0.1.0</version>
 		<note>
 			<item>First bare minimum version, containing files with not needed functions</item>
+			<item>Branch: bare_minimum</item>
 		</note>
 	</changelog>
 </changelogs>
