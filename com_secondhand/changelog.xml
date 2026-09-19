@@ -4,9 +4,9 @@
 	<changelog>
 		<element>com_secondhand</element>
 		<type>component</type>
-		<version>0.0.0</version>
+		<version>0.2.0</version>
 		<note>
-			<item>Initial Version</item>
+			<item>Removed unnecesary parts in controller, kept edit only, api module getItem, save</item>
 		</note>
 	</changelog>
 	<changelog>
@@ -14,7 +14,7 @@
 		<type>component</type>
 		<version>0.1.0</version>
 		<note>
-			<item>First bare minimum version</item>
+			<item>First bare minimum version, containing files with not needed functions</item>
 		</note>
 	</changelog>
 </changelogs>
