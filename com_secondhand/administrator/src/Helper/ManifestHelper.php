@@ -8,7 +8,7 @@
  * @license        GNU General Public License version 2 or later
  */
 
-namespace Bluebox\Component\Secondhand\Api\Helper;
+namespace Bluebox\Component\Secondhand\Administrator\Helper;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\MVC\Controller\Exception\ResourceNotFound;

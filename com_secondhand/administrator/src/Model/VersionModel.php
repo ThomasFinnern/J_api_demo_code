@@ -8,14 +8,14 @@
  * @license        GNU General Public License version 2 or later
  */
 
-namespace Bluebox\Component\Secondhand\Api\Model;
+namespace Bluebox\Component\Secondhand\Administrator\Model;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\MVC\Controller\Exception\ResourceNotFound;
 use Joomla\CMS\MVC\Model\BaseDatabaseModel;
 use Joomla\Database\DatabaseInterface;
 
-use Bluebox\Component\Secondhand\Api\Helper\ManifestHelper;
+use Bluebox\Component\Secondhand\Administrator\Helper\ManifestHelper;
 
 // phpcs:disable PSR1.Files.SideEffects
 \defined('_JEXEC') or die;
