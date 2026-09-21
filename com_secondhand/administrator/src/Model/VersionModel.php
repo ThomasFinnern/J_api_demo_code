@@ -81,7 +81,7 @@ class VersionModel extends BaseDatabaseModel
 	 *
 	 * @since version
 	 */
-	public function save(mixed $data = [], $isForce = false)
+	public function save(mixed $data = [])
 	{
 		$isSaved = true;
 
